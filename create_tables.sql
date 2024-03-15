@@ -4,7 +4,7 @@ CREATE TABLE customers (
 	customer_zip_code int,
 	customer_city varchar (50),
 	customer_state varchar (50)
-	)
+	);
 
 CREATE TABLE geolocation (
 	geolocation_zip_code_prefix int,
@@ -12,7 +12,7 @@ CREATE TABLE geolocation (
 	geolocation_Ing float,
 	geolocation_city varchar (50),
 	geolocation_state varchar (10)
-	)
+	);
 
 CREATE TABLE order_items (
 	order_id varchar,
@@ -22,7 +22,7 @@ CREATE TABLE order_items (
 	shipping_limit_date timestamp,
 	price float,
 	freight_value float
-    ) 
+        ) ;
 
 CREATE TABLE order_payments (
 	order_id varchar(50), 
@@ -30,7 +30,7 @@ CREATE TABLE order_payments (
 	payment_type varchar (50), 
 	payment_installments int, 
 	payment_value float
-    )
+        );
 
 CREATE TABLE reviews (
     review_id varchar (50),
@@ -40,7 +40,7 @@ CREATE TABLE reviews (
 	review_comment_message varchar (500), 
 	review_creation_date timestamp, 
 	review_answer_timestamp timestamp
-    )
+        );
 
 CREATE TABLE orders (
 	order_id VARCHAR(100),
@@ -51,7 +51,7 @@ CREATE TABLE orders (
 	order_delivered_carrier_date TIMESTAMP,
 	order_delivered_customer_date TIMESTAMP,
 	order_estimated_delivery_date TIMESTAMP
-	) 
+	);
 
 CREATE TABLE products (
 	product_id varchar(50),
@@ -63,16 +63,16 @@ CREATE TABLE products (
 	product_length_cm int ,
 	product_height_cm int ,
 	product_width_cm int 
-    ) 
+        ); 
 
 CREATE TABLE sellers(
     seller_id varchar(50),
 	seller_zip_code_prefix int,
 	seller_city varchar (100) ,
 	seller_state varchar(15)
-	)
+	);
 
 CREATE TABLE product_category_name_translation (
 	product_category_name varchar(50),
 	product_category_name_english varchar(70)
-	)
+	);
